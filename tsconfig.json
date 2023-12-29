@@ -1,0 +1,14 @@
+{
+  "include": ["vite.config.ts", "layout/*.ts", "index.ts"],
+  "compilerOptions": {
+    "module": "es6",
+    "target": "es5",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": ["vite/client", "node"],
+    "moduleResolution": "node"
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

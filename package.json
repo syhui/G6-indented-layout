@@ -1,13 +1,18 @@
 {
   "name": "g6-indented-layout",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "修复G6 缩进树, direction为H且dropCap为false时，左侧节点不对齐问题",
-  "module": "/dist/layout.js",
+  "module": "./dist/g6-indented-layout.mjs",
+  "main": "./dist/g6-indented-layout.umd.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build",
     "prepublishOnly": "npm run build"
   },
+  "files": [
+    "dist",
+    "types"
+  ],
   "types": "types/index.d.ts",
   "keywords": [
     "antvG6",
@@ -16,7 +21,7 @@
     "dropCap"
   ],
   "author": "syhui",
-  "license": "MIT",
+  "license": "SIC",
   "devDependencies": {
     "typescript": "^5.3.3",
     "vite": "^5.0.10"
